@@ -46,8 +46,6 @@ const config = {
     'no-unused-vars': 'warn',
     'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }],
     'react/jsx-uses-react': 'off',
-    // Fixes issues with new JSX transform
-    'react/react-in-jsx-scope': 'off',
     'import/extensions': 'off',
     // TODO: Improve these rules to be more strict
     'operator-linebreak': 'off',
@@ -58,6 +56,8 @@ const config = {
     'jsx-a11y/click-events-have-key-events': 'off',
     'jsx-a11y/label-has-associated-control': 'off',
     'consistent-return': 'off',
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': ['error'],
   },
 };
 

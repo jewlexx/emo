@@ -14,14 +14,12 @@ const Emoji: FunctionComponent<EmojiProps> = ({
   emoji,
   width = '1em',
   height = '1em',
-}) => {
-  return (
-    <span>
-      {parse(emoji).map(({ url }) => (
-        <img src={url} alt={emoji} style={{ width, height }} />
-      ))}
-    </span>
-  );
-};
+}) => (
+  <span>
+    {parse(emoji).map(({ url }) => (
+      <img src={url} alt={emoji} style={{ width, height }} />
+    ))}
+  </span>
+);
 
 export default Emoji;
