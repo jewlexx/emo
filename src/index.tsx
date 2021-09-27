@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { FunctionComponent } from 'react'
 import styles from './styles.module.css'
 
-interface Props {
-  text: string
+export interface EmojiProps {
+  emoji: string
 }
 
-export const ExampleComponent = ({ text }: Props) => {
-  return <div className={styles.test}>Example: {text}</div>
+export const Emoji: FunctionComponent<EmojiProps> = ({ emoji }) => {
+  return <div className={styles.test}>Example: {emoji}</div>
 }
