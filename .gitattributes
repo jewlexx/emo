@@ -1,0 +1,4 @@
+**/build/* linguist-generated
+.prettierrc.js linguist-vendored
+.eslintrc.js linguist-vendored
+.rollup.config.js linguist-vendored
