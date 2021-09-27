@@ -1,8 +1,8 @@
-import React, { FunctionComponent } from 'react'
-import { parse } from 'twemoji-parser'
+import React, { FunctionComponent } from 'react';
+import { parse } from 'twemoji-parser';
 
 export interface EmojiProps {
-  emoji: string
+  emoji: string;
 }
 
 const Emoji: FunctionComponent<EmojiProps> = ({ emoji }) => (
@@ -11,6 +11,6 @@ const Emoji: FunctionComponent<EmojiProps> = ({ emoji }) => (
       <img src={url} style={{ width: '1em', height: '1em' }} />
     ))}
   </span>
-)
+);
 
-export default Emoji
+export default Emoji;

@@ -1,4 +1,4 @@
-import typescript from '@rollup/plugin-typescript'
+import typescript from '@rollup/plugin-typescript';
 
 /**
  * @type {import('rollup').RollupOptions}
@@ -7,9 +7,9 @@ const config = {
   input: 'src/index.tsx',
   output: {
     dir: 'dist',
-    format: 'cjs'
+    format: 'cjs',
   },
-  plugins: [typescript()]
-}
+  plugins: [typescript()],
+};
 
-export default config
+export default config;
