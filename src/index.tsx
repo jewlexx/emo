@@ -1,5 +1,18 @@
-import React, { FunctionComponent } from 'react';
-import { parse } from 'twemoji-parser';
+import React from 'react';
+
+const url = (emoji: string): string =>
+  `https://twemoji.maxcdn.com/v/13.1.0/svg/${emoji}.svg`;
+
+const parse = (emoji: string): string => {
+  const comp =
+    (emoji.charCodeAt(0) - 0xd800) * 0x400 +
+    (emoji.charCodeAt(1) - 0xdc00) +
+    0x10000;
+  if (comp < 0) {
+    return url(emoji.charCodeAt(0).toString(16));
+  }
+  return url(comp.toString(16));
+};
 
 export interface EmojiProps {
   /** The emoji you would like to use. Eg.🕊️ */
@@ -10,16 +23,10 @@ export interface EmojiProps {
   height?: string;
 }
 
-const Emoji: FunctionComponent<EmojiProps> = ({
+const Emoji: React.FunctionComponent<EmojiProps> = ({
   emoji,
   width = '1em',
   height = '1em',
-}) => (
-  <span>
-    {parse(emoji).map(({ url }) => (
-      <img src={url} alt={emoji} style={{ width, height }} />
-    ))}
-  </span>
-);
+}) => <img src={parse(emoji)} alt={emoji} style={{ width, height }} />;
 
 export default Emoji;
