@@ -5,8 +5,8 @@
 [![NPM](https://img.shields.io/npm/v/emo-react.svg?style=flat-square)](https://www.npmjs.com/package/emo-react)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](https://standardjs.com)
 [![BundlePhobia Minified Size](https://badgen.net/bundlephobia/min/emo-react?style=flat-square)](https://bundlephobia.com/package/emo-react)
-[![BundlePhobia Minified Size](https://badgen.net/bundlephobia/minzip/emo-react?style=flat-square)](https://bundlephobia.com/package/emo-react)
-[![BundlePhobia Minified Size](https://badgen.net/bundlephobia/dependency-count/emo-react?style=flat-square)](https://bundlephobia.com/package/emo-react)
+[![BundlePhobia Minzipped Size](https://badgen.net/bundlephobia/minzip/emo-react?style=flat-square)](https://bundlephobia.com/package/emo-react)
+[![BundlePhobia Dependency Count](https://badgen.net/bundlephobia/dependency-count/emo-react?style=flat-square)](https://bundlephobia.com/package/emo-react)
 
 ## Install
 
