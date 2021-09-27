@@ -1,12 +1,21 @@
-import React, { FunctionComponent } from 'react'
-import styles from './styles.module.css'
+import React, { FunctionComponent, useRef } from 'react'
+import twemoji from 'twemoji'
 
 export interface EmojiProps {
   emoji: string
 }
 
 const Emoji: FunctionComponent<EmojiProps> = ({ emoji }) => {
-  return <div className={styles.test}>Example: {emoji}</div>
+  const emojiRef = useRef<HTMLSpanElement>(null)
+
+  return (
+    <span ref={emojiRef}>
+      {twemoji.replace('❄️', () => {
+        return
+      })}
+      {emoji}
+    </span>
+  )
 }
 
 export default Emoji
