@@ -13,14 +13,14 @@ npm install --save emo-react
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import MyComponent from 'emo-react'
-import 'emo-react/dist/index.css'
+import MyComponent from 'emo-react';
+import 'emo-react/dist/index.css';
 
 class Example extends Component {
   render() {
-    return <MyComponent />
+    return <MyComponent />;
   }
 }
 ```
