@@ -5,6 +5,8 @@ export interface EmojiProps {
   emoji: string
 }
 
-export const Emoji: FunctionComponent<EmojiProps> = ({ emoji }) => {
+const Emoji: FunctionComponent<EmojiProps> = ({ emoji }) => {
   return <div className={styles.test}>Example: {emoji}</div>
 }
+
+export default Emoji
