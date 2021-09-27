@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "target": "ES3",
     "outDir": "dist",
     "module": "esnext",
     "lib": ["dom", "esnext"],
@@ -17,6 +18,5 @@
     "noUnusedParameters": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": ["src"],
-  "exclude": ["node_modules", "dist", "example"]
+  "include": ["src"]
 }
