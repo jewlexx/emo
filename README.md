@@ -2,7 +2,11 @@
 
 > Universal emojis for React that appear the same on every device
 
-[![NPM](https://img.shields.io/npm/v/emo-react.svg)](https://www.npmjs.com/package/emo-react) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/emo-react.svg)](https://www.npmjs.com/package/emo-react)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![BundlePhobia Minified Size](https://badgen.net/bundlephobia/min/emo-react)](https://bundlephobia.com/package/emo-react)
+[![BundlePhobia Minified Size](https://badgen.net/bundlephobia/minzip/emo-react)](https://bundlephobia.com/package/emo-react)
+[![BundlePhobia Minified Size](https://badgen.net/bundlephobia/dependency-count/emo-react)](https://bundlephobia.com/package/emo-react)
 
 ## Install
 
