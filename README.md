@@ -8,22 +8,25 @@
 
 ```bash
 npm install --save emo-react
+## Or with Yarn
+yarn add emo-react
 ```
 
 ## Usage
 
 ```tsx
-import React, { Component } from 'react';
+import React from 'react';
 
-import MyComponent from 'emo-react';
-import 'emo-react/dist/index.css';
+import Emoji from 'emo-react';
 
-class Example extends Component {
-  render() {
-    return <MyComponent />;
-  }
-}
+const Example = () => <Emoji emoji="🕊️" />;
 ```
+
+Would return:
+
+<img src="https://twemoji.maxcdn.com/v/latest/svg/1f54a.svg" alt="🕊️" style="width: 1em; height: 1em;">
+
+No matter what device
 
 ## License
 

@@ -8,7 +8,7 @@ export interface EmojiProps {
 const Emoji: FunctionComponent<EmojiProps> = ({ emoji }) => (
   <span>
     {parse(emoji).map(({ url }) => (
-      <img src={url} style={{ width: '1em', height: '1em' }} />
+      <img src={url} alt={emoji} style={{ width: '1em', height: '1em' }} />
     ))}
   </span>
 );
