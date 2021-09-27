@@ -27,6 +27,9 @@
   "peerDependencies": {
     "react": "16.0.0"
   },
+  "dependencies": {
+    "twemoji-parser": "^13.1.0"
+  },
   "devDependencies": {
     "@testing-library/jest-dom": "5.14.1",
     "@testing-library/react": "12.1.0",
@@ -35,7 +38,7 @@
     "@types/node": "16.10.1",
     "@types/react": "17.0.24",
     "@types/react-dom": "17.0.9",
-    "@types/twemoji": "^12.1.2",
+    "@types/twemoji-parser": "^13.1.1",
     "@typescript-eslint/eslint-plugin": "4.31.2",
     "@typescript-eslint/parser": "4.31.2",
     "babel-eslint": "10.1.0",
@@ -61,8 +64,5 @@
   },
   "files": [
     "dist"
-  ],
-  "dependencies": {
-    "twemoji": "^13.1.0"
-  }
+  ]
 }

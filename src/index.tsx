@@ -1,21 +1,16 @@
-import React, { FunctionComponent, useRef } from 'react'
-import twemoji from 'twemoji'
+import React, { FunctionComponent } from 'react'
+import { parse } from 'twemoji-parser'
 
 export interface EmojiProps {
   emoji: string
 }
 
-const Emoji: FunctionComponent<EmojiProps> = ({ emoji }) => {
-  const emojiRef = useRef<HTMLSpanElement>(null)
-
-  return (
-    <span ref={emojiRef}>
-      {twemoji.replace('❄️', () => {
-        return
-      })}
-      {emoji}
-    </span>
-  )
-}
+const Emoji: FunctionComponent<EmojiProps> = ({ emoji }) => (
+  <span>
+    {parse(emoji).map(({ url }) => (
+      <img src={url} style={{ width: '1em', height: '1em' }} />
+    ))}
+  </span>
+)
 
 export default Emoji
