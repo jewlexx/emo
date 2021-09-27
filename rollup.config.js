@@ -14,6 +14,7 @@ const config = {
   },
   acornInjectPlugins: [jsx()],
   plugins: [typescript(), terser()],
+  external: ['react', 'twemoji-parser'],
 };
 
 export default config;
