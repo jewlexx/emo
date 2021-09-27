@@ -28,7 +28,7 @@ const Example = () => <Emoji emoji="🕊️" />;
 
 Would return:
 
-<img src="https://twemoji.maxcdn.com/v/latest/svg/1f54a.svg" alt="🕊️" style="width: 2em; height: 2em;">
+[![🕊️](https://twemoji.maxcdn.com/v/latest/72x72/1f54a.png)](#)
 
 On any and every device
 
