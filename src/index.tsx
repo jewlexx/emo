@@ -21,7 +21,7 @@ export interface EmojiProps {
   fontHeight?: number;
 }
 
-const Emoji: React.FunctionComponent<EmojiProps> = ({
+const Emo: React.FunctionComponent<EmojiProps> = ({
   emoji,
   fontWidth = 1,
   fontHeight = 1,
@@ -33,4 +33,4 @@ const Emoji: React.FunctionComponent<EmojiProps> = ({
   />
 );
 
-export default Emoji;
+export default Emo;
