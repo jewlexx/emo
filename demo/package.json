@@ -1,7 +1,5 @@
 {
-  "name": "emo-react-example",
-  "homepage": ".",
-  "version": "0.0.0",
+  "name": "emo-react-demo",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
@@ -10,24 +8,19 @@
     "eject": "react-scripts eject"
   },
   "dependencies": {
-    "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
-    "@types/react": "link:../node_modules/@types/react",
-    "@types/react-dom": "^17.0.9",
     "emo-react": "link:..",
-    "react": "link:../node_modules/react",
-    "react-dom": "^17.0.2",
-    "react-scripts": "^4.0.3",
-    "typescript": "link:../node_modules/typescript"
+    "react": "15",
+    "react-dom": "15"
+  },
+  "devDependencies": {
+    "@babel/plugin-syntax-object-rest-spread": "7.8.3",
+    "react-scripts": "4.0.3"
   },
   "eslintConfig": {
     "extends": "react-app"
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
+    "production": [">0.2%", "not dead", "not op_mini all"],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",

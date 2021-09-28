@@ -12,34 +12,31 @@
     "node": ">=10"
   },
   "scripts": {
-    "build": "rimraf dist && rollup --config rollup.config.js",
-    "dev": "rollup --config rollup.config.js --watch",
+    "build": "npx rimraf dist && rollup --config rollup.config.js",
+    "dev": "npx rollup --config rollup.config.js --watch",
     "predeploy": "cd demo && yarn install && yarn run build",
-    "deploy": "gh-pages -d demo/build",
+    "deploy": "npx gh-pages -d demo/build",
     "prepack": "yarn build"
   },
   "peerDependencies": {
-    "react": ">=16.0.0"
+    "react": ">=15"
   },
   "devDependencies": {
-    "@rollup/plugin-typescript": "^8.2.5",
+    "@rollup/plugin-typescript": "8.2.5",
     "@types/react": "17.0.24",
     "@typescript-eslint/eslint-plugin": "4.31.2",
     "@typescript-eslint/parser": "4.31.2",
     "eslint": "7.32.0",
     "eslint-config-airbnb": "18.2.1",
     "eslint-config-prettier": "8.3.0",
-    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-terser": "7.0.2",
     "eslint-plugin-import": "2.24.2",
     "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-react": "7.26.0",
     "eslint-plugin-react-hooks": "4.2.0",
-    "gh-pages": "3.2.3",
     "prettier": "2.4.1",
-    "rimraf": "^3.0.2",
-    "rollup": "^2.57.0",
-    "tslib": "^2.3.1",
-    "typescript": "^4.4.3"
+    "tslib": "2.3.1",
+    "typescript": "4.4.3"
   },
   "files": ["dist"]
 }
