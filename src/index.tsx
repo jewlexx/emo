@@ -16,20 +16,20 @@ export interface EmojiProps {
   /** The emoji you would like to use. Eg.🕊️ */
   emoji: string;
   /** The font width of the emoji. Will be passed to the width prop in css */
-  fontWidth?: number;
+  width?: number;
   /** The font height of the emoji. Will be passed to the height prop in css */
-  fontHeight?: number;
+  height?: number;
 }
 
 const Emo: React.FunctionComponent<EmojiProps> = ({
   emoji,
-  fontWidth = 1,
-  fontHeight = 1,
+  width = 1,
+  height = 1,
 }) => (
   <img
     src={u(p(emoji))}
     alt={emoji}
-    style={{ width: `${fontWidth}em`, height: `${fontHeight}em` }}
+    style={{ width: `${width}em`, height: `${height}em` }}
   />
 );
 
