@@ -1,15 +1,14 @@
 import React from 'react';
 
-const u = (e: string): string =>
-  `https://twemoji.maxcdn.com/v/latest/svg/${e}.svg`;
-
-const p = (e: string): string => {
-  if (e.length === 1) {
-    return e.charCodeAt(0).toString(16);
+const parse = (emoji: string): string => {
+  if (emoji.length === 1) {
+    return emoji.charCodeAt(0).toString(16);
   }
-  const c =
-    (e.charCodeAt(0) - 0xd800) * 0x400 + (e.charCodeAt(1) - 0xdc00) + 0x10000;
-  return (c < 0 ? e.charCodeAt(0) : c).toString(16);
+  const comp =
+    (emoji.charCodeAt(0) - 0xd800) * 0x400 +
+    (emoji.charCodeAt(1) - 0xdc00) +
+    0x10000;
+  return (comp < 0 ? emoji.charCodeAt(0) : comp).toString(16);
 };
 
 export interface EmojiProps {
@@ -27,7 +26,7 @@ const Emo: React.FunctionComponent<EmojiProps> = ({
   height = 1,
 }) => (
   <img
-    src={u(p(emoji))}
+    src={`https://twemoji.maxcdn.com/v/latest/svg/${parse(emoji)}.svg`}
     alt={emoji}
     style={{ width: `${width}em`, height: `${height}em` }}
   />
