@@ -9,17 +9,19 @@ const config = {
   treeshake: true,
   input: 'src/index.tsx',
   output: {
+    sourcemap: true,
     exports: 'default',
     dir: 'dist',
     format: 'cjs',
-    sourcemap: false,
   },
   acornInjectPlugins: [jsx()],
   plugins: [
     typescript({
-      sourceMap: false,
+      sourceMap: true,
     }),
-    terser(),
+    terser({
+      compress: true,
+    }),
   ],
   external: ['react'],
 };
