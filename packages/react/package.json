@@ -1,6 +1,6 @@
 {
   "name": "emo-react",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Universal emojis for React that appear the same on every device",
   "repository": {
     "type": "git",
