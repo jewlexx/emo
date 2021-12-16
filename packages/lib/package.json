@@ -1,0 +1,11 @@
+{
+  "name": "emoji-parse",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc"
+  }
+}
