@@ -18,12 +18,11 @@ yarn add emo-react
 
 ## Usage
 
-```tsx
+```jsx
 import React from 'react';
-
 import Emoji from 'emo-react';
 
-const Example = () => <Emoji emoji="🕊️" />;
+const Example = () => <Emo>🕊️</Emo>;
 ```
 
 Would return:
