@@ -14,9 +14,6 @@
   "workspaces": [
     "packages/*"
   ],
-  "scripts": {
-    "postinstall": "lerna bootstrap"
-  },
   "devDependencies": {
     "@types/rimraf": "3.0.2",
     "eslint": "8.4.1",
