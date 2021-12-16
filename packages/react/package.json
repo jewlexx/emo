@@ -14,9 +14,10 @@
   "scripts": {
     "build": "rimraf dist && rollup --config rollup.config.js",
     "predeploy": "cd ../demo && npm install && npm run build",
-    "deploy": "npm deploy && gh-pages -d demo/build",
+    "deploy": "gh-pages -d ../demo/build",
     "dev": "rollup --config rollup.config.js --watch",
     "prepack": "npm run build",
+    "prepublish": "npm run build && npm run deploy",
     "start": "npm run build --watch"
   },
   "devDependencies": {
