@@ -23,6 +23,7 @@
     "extends": "react-app"
   },
   "dependencies": {
+    "emo-react": "*",
     "react": "16",
     "react-dom": "16"
   },
