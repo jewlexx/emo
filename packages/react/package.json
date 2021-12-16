@@ -20,7 +20,6 @@
     "deploy": "gh-pages -d ../demo/build",
     "dev": "rollup --config rollup.config.js --watch",
     "prepack": "npm run build",
-    "prepublish": "npm run build && npm run deploy",
     "start": "npm run build --watch"
   },
   "devDependencies": {
@@ -52,5 +51,5 @@
   "engines": {
     "node": ">=10"
   },
-  "gitHead": "6b58e7f511441ae4d9acd506897b029af651726d"
+  "gitHead": "c827569285419f368f6e8617ab2c8dce57d659b2"
 }
