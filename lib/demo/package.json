@@ -1,5 +1,5 @@
 {
-  "name": "emo-react-demo",
+  "name": "emo-demo",
   "private": true,
   "scripts": {
     "build": "react-scripts build",
@@ -23,7 +23,7 @@
     "extends": "react-app"
   },
   "dependencies": {
-    "emo-react": "link:..",
+    "emo-react": "link:../../packages/react",
     "react": "15",
     "react-dom": "15"
   },

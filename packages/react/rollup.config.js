@@ -19,9 +19,10 @@ const config = {
     typescript({
       sourceMap: true,
     }),
-    terser({
-      compress: true,
-    }),
+    !process.argv.includes('--watch') &&
+      terser({
+        compress: true,
+      }),
   ],
   external: ['react'],
 };

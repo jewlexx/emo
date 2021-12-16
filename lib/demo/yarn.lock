@@ -5648,21 +5648,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"emo-react-demo@workspace:.":
+"emo-demo@workspace:.":
   version: 0.0.0-use.local
-  resolution: "emo-react-demo@workspace:."
+  resolution: "emo-demo@workspace:."
   dependencies:
     "@babel/plugin-syntax-object-rest-spread": 7.8.3
-    emo-react: "link:.."
+    emo-react: "link:../../packages/react"
     react: 15
     react-dom: 15
     react-scripts: 4.0.3
   languageName: unknown
   linkType: soft
 
-"emo-react@link:..::locator=emo-react-demo%40workspace%3A.":
+"emo-react@link:../../packages/react::locator=emo-demo%40workspace%3A.":
   version: 0.0.0-use.local
-  resolution: "emo-react@link:..::locator=emo-react-demo%40workspace%3A."
+  resolution: "emo-react@link:../../packages/react::locator=emo-demo%40workspace%3A."
   languageName: node
   linkType: soft
 

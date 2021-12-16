@@ -7163,20 +7163,14 @@ __metadata:
   resolution: "emo-react-demo@workspace:lib/demo"
   dependencies:
     "@babel/plugin-syntax-object-rest-spread": 7.8.3
-    emo-react: "link:.."
+    emo-react: "*"
     react: 15
     react-dom: 15
     react-scripts: 4.0.3
   languageName: unknown
   linkType: soft
 
-"emo-react@link:..::locator=emo-react-demo%40workspace%3Alib%2Fdemo":
-  version: 0.0.0-use.local
-  resolution: "emo-react@link:..::locator=emo-react-demo%40workspace%3Alib%2Fdemo"
-  languageName: node
-  linkType: soft
-
-"emo-react@workspace:packages/react":
+"emo-react@*, emo-react@workspace:packages/react":
   version: 0.0.0-use.local
   resolution: "emo-react@workspace:packages/react"
   dependencies:

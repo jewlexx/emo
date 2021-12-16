@@ -25,12 +25,18 @@ const Emo: React.FunctionComponent<EmojiProps> = ({
   children,
   width = 1,
   height = 1,
-}) => (
-  <img
-    src={`https://twemoji.maxcdn.com/v/latest/svg/${parse(children)}.svg`}
-    alt={children}
-    style={{ width: `${width}em`, height: `${height}em` }}
-  />
-);
+}) => {
+  if (typeof children !== 'string') {
+    throw new Error('Emoji must be a string');
+  }
+
+  return (
+    <img
+      src={`https://twemoji.maxcdn.com/v/latest/svg/${parse(children)}.svg`}
+      alt={children}
+      style={{ width: `${width}em`, height: `${height}em` }}
+    />
+  );
+};
 
 export default Emo;
