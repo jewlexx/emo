@@ -1,12 +1,9 @@
 {
   "name": "emo",
   "description": "Universal emojis for React that appear the same on every device",
-  "repository": "jamesinaxx/emo-react",
+  "repository": "jamesinaxx/emo",
   "license": "MIT",
   "author": "jamesinaxx",
-  "main": "./dist/index.js",
-  "source": "./src/index.tsx",
-  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
