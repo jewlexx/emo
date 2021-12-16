@@ -1,3 +1,6 @@
+build/*
+!build/rollup.config.js
+
 # Logs
 logs
 *.log
