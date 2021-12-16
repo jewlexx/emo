@@ -18,5 +18,5 @@
     "noUnusedParameters": true,
     "allowSyntheticDefaultImports": true
   },
-  "include": ["packages/react/src"]
+  "include": ["src"]
 }

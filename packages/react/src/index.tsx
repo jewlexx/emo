@@ -14,7 +14,7 @@ const parse = (emoji: string): string => {
 
 export interface EmojiProps {
   /** The emoji you would like to use. Eg.🕊️ */
-  emoji: string;
+  children: string;
   /** The font width of the emoji. Will be passed to the width prop in css */
   width?: number;
   /** The font height of the emoji. Will be passed to the height prop in css */
@@ -22,13 +22,13 @@ export interface EmojiProps {
 }
 
 const Emo: React.FunctionComponent<EmojiProps> = ({
-  emoji,
+  children,
   width = 1,
   height = 1,
 }) => (
   <img
-    src={`https://twemoji.maxcdn.com/v/latest/svg/${parse(emoji)}.svg`}
-    alt={emoji}
+    src={`https://twemoji.maxcdn.com/v/latest/svg/${parse(children)}.svg`}
+    alt={children}
     style={{ width: `${width}em`, height: `${height}em` }}
   />
 );
