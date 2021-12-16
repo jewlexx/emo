@@ -2,6 +2,10 @@
   "name": "emo-react",
   "version": "2.1.0",
   "description": "Universal emojis for React that appear the same on every device",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jamesinaxx/emo"
+  },
   "license": "MIT",
   "author": "jamesinaxx",
   "main": "./dist/index.js",
