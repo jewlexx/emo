@@ -24,7 +24,7 @@ const config = {
         compress: true,
       }),
   ],
-  external: ['react'],
+  external: ['react', 'emo-lib'],
 };
 
 export default config;
