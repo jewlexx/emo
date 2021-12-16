@@ -3,7 +3,7 @@ import Vue from 'vue';
 import { parseString, getUrlEmoji } from 'emo-lib';
 
 export default /* #__PURE__ */ Vue.extend({
-  name: 'Emo', // vue component name
+  name: 'emo', // vue component name
   props: {
     text: {
       type: String,
