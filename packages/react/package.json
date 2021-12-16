@@ -1,6 +1,6 @@
 {
   "name": "emo-react",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "description": "Universal emojis for React that appear the same on every device",
   "license": "MIT",
   "author": "jamesinaxx",
@@ -19,7 +19,7 @@
     "start": "yarn run build --watch"
   },
   "dependencies": {
-    "emo-lib": "2.0.3"
+    "emo-lib": "^2.1.0"
   },
   "devDependencies": {
     "@types/gh-pages": "3.2.0",

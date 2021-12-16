@@ -1,6 +1,6 @@
 {
   "name": "emo-demo",
-  "version": "2.0.3",
+  "version": "2.1.0",
   "private": true,
   "scripts": {
     "build": "react-scripts build",
@@ -24,7 +24,7 @@
     "extends": "react-app"
   },
   "dependencies": {
-    "emo-react": "^2.0.3",
+    "emo-react": "^2.1.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
