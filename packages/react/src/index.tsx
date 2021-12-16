@@ -1,41 +1,38 @@
 // eslint-disable-next-line import/no-unresolved
 import React from 'react';
-
-const parse = (emoji: string): string => {
-  if (emoji.length === 1) {
-    return emoji.charCodeAt(0).toString(16);
-  }
-  const comp =
-    (emoji.charCodeAt(0) - 0xd800) * 0x400 +
-    (emoji.charCodeAt(1) - 0xdc00) +
-    0x10000;
-  return (comp < 0 ? emoji.charCodeAt(0) : comp).toString(16);
-};
+import { getUrlEmoji, parseString } from 'emo-lib';
 
 export interface EmojiProps {
   /** The emoji you would like to use. Eg.🕊️ */
   children: string;
-  /** The font width of the emoji. Will be passed to the width prop in css */
-  width?: number;
-  /** The font height of the emoji. Will be passed to the height prop in css */
-  height?: number;
 }
 
-const Emo: React.FunctionComponent<EmojiProps> = ({
-  children,
-  width = 1,
-  height = 1,
-}) => {
-  if (typeof children !== 'string') {
+const Emo: React.FunctionComponent<EmojiProps> = ({ children: e }) => {
+  if (typeof e !== 'string') {
     throw new Error('Emoji must be a string');
   }
 
   return (
-    <img
-      src={`https://twemoji.maxcdn.com/v/latest/svg/${parse(children)}.svg`}
-      alt={children}
-      style={{ width: `${width}em`, height: `${height}em` }}
-    />
+    <span>
+      {parseString(e).map((emoji): React.ReactNode => {
+        if (emoji.type === 'text') {
+          return ` ${emoji.value} `;
+        }
+        return (
+          <>
+            {' '}
+            <img
+              src={getUrlEmoji(emoji.value)}
+              alt={e}
+              style={{
+                width: '1em',
+                height: '1em',
+              }}
+            />{' '}
+          </>
+        );
+      })}
+    </span>
   );
 };
 

@@ -27,10 +27,8 @@ a {
 
 a:hover {
   color: rgb(32, 238, 238);
-  font-size: large;
 }
 
 a:active {
   color: rgb(25, 153, 153);
-  font-size: medium;
 }

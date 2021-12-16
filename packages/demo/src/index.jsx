@@ -6,17 +6,18 @@ import './index.css';
 ReactDOM.render(
   <div>
     <h1>
-      <Emo>❄️</Emo> Things are looking kinda icy outside <Emo>❄️</Emo>
+      <Emo>❄️ Things are looking kinda icy outside ❄️</Emo>
     </h1>
     <h1>
-      <Emo>🎉</Emo> Thank god these emojis are going to display the same
-      everywhere <Emo>🎉</Emo>
+      <Emo>
+        🎉 Thank god these emojis are going to display the same everywhere 🎉
+      </Emo>
     </h1>
     <h1>
-      <Emo>🥲</Emo> I don&apos;t know what I would do otherwise <Emo>🥲</Emo>
+      <Emo>🥲 I don&apos;t know what I would do otherwise 🥲</Emo>
     </h1>
     <h2>
-      Developed with <Emo>❤️</Emo> by{' '}
+      <Emo>Developed with ❤️ by</Emo>{' '}
       <a href="https://github.com/jamesinaxx" target="_blank" rel="noreferrer">
         jamesinaxx
       </a>
