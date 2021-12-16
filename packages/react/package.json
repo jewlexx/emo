@@ -1,6 +1,6 @@
 {
   "name": "emo-react",
-  "version": "2.0.0",
+  "version": "1.1.3",
   "description": "Universal emojis for React that appear the same on every device",
   "repository": "jamesinaxx/emo-react",
   "license": "MIT",
@@ -13,11 +13,11 @@
   ],
   "scripts": {
     "build": "rimraf dist && rollup --config rollup.config.js",
-    "predeploy": "cd demo && yarn install && yarn run build",
-    "deploy": "yarn deploy && gh-pages -d demo/build",
+    "predeploy": "cd demo && npm install && npm run build",
+    "deploy": "npm deploy && gh-pages -d demo/build",
     "dev": "rollup --config rollup.config.js --watch",
-    "prepack": "yarn build",
-    "start": "yarn build --watch"
+    "prepack": "npm run build",
+    "start": "npm run build --watch"
   },
   "devDependencies": {
     "@rollup/plugin-typescript": "8.3.0",
@@ -48,5 +48,5 @@
   "engines": {
     "node": ">=10"
   },
-  "packageManager": "yarn@3.1.1"
+  "gitHead": "6b58e7f511441ae4d9acd506897b029af651726d"
 }
