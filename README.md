@@ -1,6 +1,6 @@
-# emo-react
+# emo
 
-> Universal emojis for React that appear the same on every device
+> Universal emojis that appear the same on every device
 
 [![NPM](https://img.shields.io/npm/v/emo-react.svg?style=flat-square)](https://www.npmjs.com/package/emo-react)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](https://standardjs.com)
