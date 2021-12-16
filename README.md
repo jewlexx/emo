@@ -16,6 +16,10 @@ npm install --save emo-react
 yarn add emo-react
 ```
 
+## Known Issues
+
+- (React): There is currently a bug with SSR, that means in the development version, the images are not interpolated, and text does not match from client to server. However, in production, it is not an issue. As far as is currently known, this only affects NextJS, but may affect other frameworks too.
+
 ## Usage
 
 ```jsx
