@@ -1,88 +1,49 @@
 <script lang="ts">
 import Vue from 'vue';
+import { parseString, getUrlEmoji } from 'emo-lib';
 
-interface SampleData {
-  counter: number;
-  initCounter: number;
-  message: {
-    action: string | null;
-    amount: number | null;
-  };
-}
-
-export default /*#__PURE__*/Vue.extend({
+export default /* #__PURE__ */ Vue.extend({
   name: 'Emo', // vue component name
-  data(): SampleData {
+  props: {
+    text: {
+      type: String,
+      required: true,
+    },
+  },
+  data() {
     return {
-      counter: 5,
-      initCounter: 5,
-      message: {
-        action: null,
-        amount: null,
-      },
+      parsedText: parseString(this.text),
     };
   },
-  computed: {
-    changedBy() {
-      const { message } = this as SampleData;
-      if (!message.action) return 'initialized';
-      return `${message.action} ${message.amount || ''}`.trim();
-    },
-  },
   methods: {
-    increment(arg: Event | number): void {
-      const amount = (typeof arg !== 'number') ? 1 : arg;
-      this.counter += amount;
-      this.message.action = 'incremented by';
-      this.message.amount = amount;
-    },
-    decrement(arg: Event | number): void {
-      const amount = (typeof arg !== 'number') ? 1 : arg;
-      this.counter -= amount;
-      this.message.action = 'decremented by';
-      this.message.amount = amount;
-    },
-    reset(): void {
-      this.counter = this.initCounter;
-      this.message.action = 'reset';
-      this.message.amount = null;
-    },
+    getUrlEmoji,
   },
 });
 </script>
 
 <template>
-  <div class="emo">
-    <p>The counter was {{ changedBy }} to <b>{{ counter }}</b>.</p>
-    <button @click="increment">
-      Click +1
-    </button>
-    <button @click="decrement">
-      Click -1
-    </button>
-    <button @click="increment(5)">
-      Click +5
-    </button>
-    <button @click="decrement(5)">
-      Click -5
-    </button>
-    <button @click="reset">
-      Reset
-    </button>
-  </div>
+  <span>
+    <template v-for="text in parsedText">
+      <!--eslint-disable-next-line-->
+      <img
+        v-if="text.type === 'emoji'"
+        :src="getUrlEmoji(text.value)"
+        :alt="text.value"
+      />
+      <template v-else>{{ text.value }}</template
+      >&nbsp;</template
+    >
+    <!-- Ignore the weird formatting above, it wouldn't work otherwise -->
+  </span>
 </template>
 
 <style scoped>
-  .emo {
-    display: block;
-    width: 400px;
-    margin: 25px auto;
-    border: 1px solid #ccc;
-    background: #eaeaea;
-    text-align: center;
-    padding: 25px;
-  }
-  .emo p {
-    margin: 0 0 1em;
-  }
+span {
+  display: inline-block;
+}
+
+img {
+  height: 1em;
+  width: 1em;
+}
 </style>
