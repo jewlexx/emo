@@ -1,6 +1,6 @@
 {
   "name": "emo-vue",
-  "version": "1.0.0",
+  "version": "2.2.0",
   "description": "Universal emojis for Vue that appear the same on every device",
   "license": "MIT",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "serve": "vue-cli-service serve dev/serve.ts"
   },
   "dependencies": {
-    "emo-lib": "^2.1.0"
+    "emo-lib": "^2.2.0"
   },
   "devDependencies": {
     "@babel/core": "7.16.5",
